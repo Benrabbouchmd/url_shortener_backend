@@ -5,7 +5,7 @@ class Redis {
         this.client = createClient({
             socket: {
               host: process.env.REDIS_HOST || 'localhost', // Use 'redis' if using Docker Compose
-              port: process.env.REDIS_PORT || 6379,
+              port: process.env.REDIS_PORT || 10022,
             },
             legacyMode: true, // Required for older Redis commands
           });
